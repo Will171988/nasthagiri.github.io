@@ -1,0 +1,29 @@
+
+<html>
+<head></head>
+<body>
+<script>
+
+function errorHandler() {
+    alert('You are NOT registered for the edX demo course');
+}
+
+function successHandler() {
+    alert('You are registered for the edX demo course');
+}
+
+function checkCourse() {
+    var scriptTag = document.createElement("script");
+    scriptTag.type = "text/javascript";
+    scriptTag.onload = (function() { successHandler(); });
+    scriptTag.onerror = (function() { errorHandler(); });
+    document.body.appendChild(scriptTag);
+    //scriptTag.src = "https://api.coursera.org/api/sessions/v1/32/sections/1/items";
+    scriptTag.src = "https://courses.edx.org/courses/edX/DemoX/Demo_Course/discussion/forum";
+}
+
+checkCourse();
+</script>
+</body>
+</html>
+
