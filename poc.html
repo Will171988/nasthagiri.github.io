@@ -4,15 +4,16 @@
 <body>
 <script>
 function errorHandler(msg, url, line) {
-    alert('You are NOT registered for the edX demo course: ' + msg + ' ' + url + ' ' + line);
+    alert('You are NOT registered for the harvardX demo course: ' + msg + ' ' + url + ' ' + line);
 }
 
 function successHandler(msg) {
-    alert('You are registered for the edX demo course:' + msg);
+    alert('You are registered for the harvardX demo course: ' + msg);
 }
 </script>
 
-<script src="https://courses.edx.org/courses/edX/DemoX/Demo_Course/discussion/forum" onload="successHandler()" onerror="errorHandler()">
+<script src="https://courses.edx.org/courses/HarvardX/CS50x/2014_T1/discussion/forum" onload="successHandler()" onerror="errorHandler()">
+//edX/DemoX/Demo_Course
 </script>
 
 </body>
