@@ -2,11 +2,7 @@
 <html>
 <head></head>
 <body>
-<script
-src="https://courses.edx.org/courses/edX/DemoX/Demo_Course/discussion/forum"
-onload=(function() { successHandler(); })
-onerror=(function() { errorHandler(); })
->
+<script src="https://courses.edx.org/courses/edX/DemoX/Demo_Course/discussion/forum" onload="successHandler()" onerror="errorHandler()">
 
 function errorHandler() {
     alert('You are NOT registered for the edX demo course');
@@ -16,7 +12,6 @@ function successHandler() {
     alert('You are registered for the edX demo course');
 }
 
-}
 </script>
 
 </body>
