@@ -3,12 +3,12 @@
 <head></head>
 <body>
 <script>
-function errorHandler() {
-    alert('You are NOT registered for the edX demo course');
+function errorHandler(msg, url, line) {
+    alert('You are NOT registered for the edX demo course: ' + msg + ' ' + url + ' ' + line);
 }
 
-function successHandler() {
-    alert('You are registered for the edX demo course');
+function successHandler(msg) {
+    alert('You are registered for the edX demo course:' + msg);
 }
 </script>
 
